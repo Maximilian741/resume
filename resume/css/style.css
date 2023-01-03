@@ -7,7 +7,7 @@ Maximilian Casteel
 body
 {
 	background: #000000;
-	color: #999;
+	color: rgb(255, 255, 255);
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -169,7 +169,7 @@ h1,h2,h3,h4,h5
 /* start home */       
 #home
 	{
-        background: url('../images/home-bg.jpg');
+        background: url('../images/136.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         padding-top: 120px;
@@ -178,8 +178,8 @@ h1,h2,h3,h4,h5
 	}
 #home h1
     {
-        border: 2px solid #D43F52;
-        color: #D43F52;
+        border: 2px solid #000000;
+        color: #000000;
         display: inline-block;
         letter-spacing: 6px;
         padding: 25px 35px;
@@ -204,7 +204,7 @@ h1,h2,h3,h4,h5
     }
 #home .btn:hover
     {
-        background: #D43F52;
+        background: #000000;
         border-color: transparent;
     }
 /* end home */
@@ -228,7 +228,7 @@ h1,h2,h3,h4,h5
     {
         border: 2px solid #ffffff;
         border-radius: 50%;
-        color: #D43F52;
+        color: #0d939a;
         font-size: 24px;
         margin-right: 24px;
         width: 60px;
@@ -270,7 +270,7 @@ h1,h2,h3,h4,h5
     }
 #portfolio .portfolio-thumb .portfolio-overlay
     {
-        background: #D43F52;
+        background: #013c3d;
         top: 0;
         left: 0;
         right: 0;
@@ -308,7 +308,7 @@ h1,h2,h3,h4,h5
     {
         border: 2px solid #ffffff;
         border-radius: 50%;
-        color: #D43F52;
+        color: #077a7a;
         width: 50px;
         height: 50px;
         line-height: 45px;
@@ -330,7 +330,7 @@ h1,h2,h3,h4,h5
     }
 #contact input[type="submit"]
     {
-        background: #D43F52;
+        background: #077a7a;
         border: 2px solid transparent;
         color: #ffffff;
         font-weight: bold;
@@ -339,7 +339,7 @@ h1,h2,h3,h4,h5
 #contact input[type="submit"]:hover
     {
         background: #ffffff;
-        color: #D43F52;
+        color: #077a7a;
     }
 /* end contact */
 
@@ -380,6 +380,6 @@ footer hr
     }
 .social-icon li a:hover
     {
-        color: #D43F52;
+        color: #077a7a;
     }
 /* end social icon */
