@@ -28,11 +28,12 @@ function sendEmail() {
 
 //This function is called when the user clicks on one of the projects, it opens a popup window with the project details.
 function openProject(project) {
-    var projectWindow = window.open("", "projectWindow", "width=400,height=400");
-    projectWindow.document.write(project);
+    var projectWindow = window.open("", "projectWindow", "width=500,height=500");
+    projectWindow.document.write("<html><head><title>" + project + "</title></head><body><h1>" + project + "</h1></body></html>");
 }
 
-//This function is called when the user clicks on the close button on the popup window, it closes the window.
-function closeProject() {
-    window.close();
+//This function is called when the user clicks on the "View Resume" button, it opens a new tab with the resume.
+function viewResume() {
+    window.open("resume.pdf", "_blank");
 }
+
