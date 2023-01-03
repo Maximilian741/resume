@@ -5,6 +5,11 @@ Maximilian Casteel
 */
 
 
+/* This is going to be the section that displays my github contribution chart. */
+
+
+
+
 /* I need to create a modal that will function once one of the projects is clicked on.*/
 /*--------------------
 MODAL, THIS IS THE WINDOW THAT APPEARS AFTER YOU CLICK ON ONE OF THE RECCOMMENDED BUSINESS CATEGORIES.
@@ -77,6 +82,14 @@ body
 #portfolio .fp-slide,
 #portfolio .fp-tableCell,
 
+#resume, 
+#resume .fp-slide,
+#resume .fp-tableCell,
+
+#github,
+#github .fp-slide,
+#github .fp-tableCell,
+
 footer,
 footer .fp-slide,
 footer .fp-tableCell
@@ -85,6 +98,12 @@ footer .fp-tableCell
 }
 
 /* end all section */
+
+.resume
+{
+    background: #d9d4d4;
+
+}
 
 /* start all heading */
 h1,h2,h3,h4,h5
