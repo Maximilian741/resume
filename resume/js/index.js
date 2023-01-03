@@ -37,3 +37,11 @@ function viewResume() {
     window.open("resume.pdf", "_blank");
 }
 
+//This fucntion is called when the user clicks on the close button for the modal popup, it closes the popup.
+function close() {
+    document.getElementById("modal").style.display = "none";
+}
+
+//This function is called when the user clicks on the "Contact Me" button, it opens the modal popup.
+
+

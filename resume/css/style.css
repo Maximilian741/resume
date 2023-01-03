@@ -2,21 +2,33 @@
 Original design by TemplateMo
 I have heavily edited this template to make it work with my website.
 Maximilian Casteel
-*/
 
-
-/* This is going to be the section that displays my github contribution chart. */
-
-
-
-
-/* I need to create a modal that will function once one of the projects is clicked on.*/
-/*--------------------
-MODAL, THIS IS THE WINDOW THAT APPEARS AFTER YOU CLICK ON ONE OF THE RECCOMMENDED BUSINESS CATEGORIES.
+ I need to create a modal that will function once one of the projects is clicked on.
+ 
+--------------------
+MODAL, THIS IS THE WINDOW THAT APPEARS WHEN YOU CLICK ON A PROJECT.
+Currently the modal is popping up at the top of the page and not centered on the current view.  I need to fix this.
 --------------------*/
+
+
+
+.modal-content {
+    background-color: #ffffff;
+    border: 0 none;
+    border-radius: 0;
+    box-shadow: 0 0 0 0;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    z-index: 9999;
+
+}
 
 .modal-content {
 	border-radius: 0;	
+
 }
 .modal-header .close {
 	font-size: 30px;	
@@ -29,6 +41,7 @@ MODAL, THIS IS THE WINDOW THAT APPEARS AFTER YOU CLICK ON ONE OF THE RECCOMMENDE
 
 .modal-body {
 	padding: 0;
+
 }
 
 .modal-body p {
@@ -50,7 +63,22 @@ font-size: 11px;
 	background-color: #460202;
     margin-right: 15px;
     padding: 5px 10px;
+    border-radius: 3px;
+    display: inline-block;
+
 }
+.Close {
+    color: #460202;
+    opacity: 1;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=50);
+    opacity: .5;
+}
+
+
 
 body
 {
@@ -101,7 +129,15 @@ footer .fp-tableCell
 
 .resume
 {
-    background: #d9d4d4;
+        color: #606060;
+        background:#212121;
+        padding: 20px;
+        
+        /* round the corners*/
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        
 
 }
 
