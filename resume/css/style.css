@@ -67,7 +67,7 @@ font-size: 11px;
     display: inline-block;
 
 }
-.Close {
+.close {
     color: #460202;
     opacity: 1;
     font-size: 40px;
@@ -132,20 +132,78 @@ footer .fp-tableCell
         color: #606060;
         background:#212121;
         padding: 20px;
-        
+        text-align: center;
+        display: block;
+
+
+
         /* round the corners*/
         -moz-border-radius: 5px;
         -webkit-border-radius: 5px;
         border-radius: 5px;
+        display: block;
+        
+
+}
+
+.github
+{
+        color: #606060;
+        background:#212121;
+        padding: 20px;
+        text-align: center;
+
+        /* round the corners*/
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+
+        /* Align the image that is pulled in from my github 'Maximilian741'.*/
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        image-orientation: center;
+        text-orientation: center;
+        display: block;
+
+        
+        
+
+}
+.iframe
+{
+        color: #606060;
+        background:#212121;
+        padding: 20px;
+        text-align: center;
+
+        /* round the corners*/
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+
+        /* Align the image that is pulled in from my github 'Maximilian741'.*/
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        image-orientation: center;
+        text-orientation: center;
+        display: block;
+
+        
         
 
 }
 
 /* start all heading */
-h1,h2,h3,h4,h5
+h1,h3,h4,h5
     {
         color: #ffffff;
         font-weight: bold;
+        
+    }
+    h2{
+        text-align: center;
     }
 /* end all heading */
 
