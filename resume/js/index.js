@@ -42,4 +42,11 @@ function close() {
     document.getElementById("modal").style.display = "none";
 }
 
+//This function is called when the user clicks on the "Contact Me" button, it opens the modal popup.
+function contactMe() {
+    document.getElementById("modal").style.display = "block";
+}
+
+
+
 
