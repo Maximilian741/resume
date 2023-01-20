@@ -330,13 +330,14 @@ h1,h3,h4,h5
         /*
         I want the image to be full screen, so I set the background-size to cover.
         I also want the background image to be called "136.jpg" and I want it to be repeated.
-        The image is not displaying on github pages, but it is displaying on my local machine.  I have tried to use the url() function, but it is not working.
+        The image is not displaying on github pages, but it is displaying on my local machine.  
+        I need to use the full path to the image, but I don't know how to do that.
 
         */
         
-        
+        background-image: url("136.jpg");
 
-        background-image: url("../images/136.jpg"); 
+       
         background-size: cover;
         background-repeat: no-repeat;
         padding-top: 120px;
