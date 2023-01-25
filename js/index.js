@@ -27,9 +27,12 @@ function sendEmail() {
 
 
 //This function is called when the user clicks on one of the projects, it opens a popup window with the project details.
-function openProject(project) {
-    var projectWindow = window.open("", "projectWindow", "width=500,height=500");
-    projectWindow.document.write("<html><head><title>" + project + "</title></head><body><h1>" + project + "</h1></body></html>");
+//This function will link tthe project to my repository on githuib that holds the project.  It will take the name of the project and use it to find the correct repository as the argument.
+function viewProject(project) {
+    var projectWindow = window.open("project.html", "_blank");
+    projectWindow.onload = function () {
+        projectWindow.document.getElementById("project").innerHTML = project;
+    }
 }
 
 //This function is called when the user clicks on the "View Resume" button, it opens a new tab with the resume.
