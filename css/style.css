@@ -351,20 +351,25 @@ h1,h3,h4,h5
 
         */
         
-        background-image: url("136.jpg");
+        /* I want the background image to be a dynamic image, or cycle thorugh several different images like a slideshow */
 
-       
-        background-size: cover;
+
+
+        /* I want the gif to be zoomed out to fit the screen*/
+        background-image: url('8351257.gif') ;
+        
+        background-position: center;
+        background-size: 170%;
         background-repeat: no-repeat;
         padding-top: 120px;
-        padding-bottom: 140px;
+        padding-bottom: 200px;
         text-align: center;
         
 	}
 #home h1
     {
-        border: 2px solid #000000;
-        color: #000000;
+        border: 3px solid #000000;
+        color: #ffffff;
         display: inline-block;
         letter-spacing: 6px;
         padding: 25px 35px;
