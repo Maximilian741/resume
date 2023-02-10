@@ -11,6 +11,14 @@ Currently the modal is popping up at the top of the page and not centered on the
 The modal needs to pop up in the center of the current viewport.
 --------------------*/
 
+
+/* Preliminary styling that will be used consistently throuhgtout the program */
+.teah {
+
+}
+
+
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
