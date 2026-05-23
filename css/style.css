@@ -1,590 +1,455 @@
 /*
-Original design by TemplateMo
-I have heavily edited this template to make it work with my website.
-Maximilian Casteel
+    Personal site styles for Max Casteel.
+    Original design adapted from a TemplateMo Lavish template;
+    significantly modified for content, structure, and bug fixes.
+*/
 
- I need to create a modal that will function once one of the projects is clicked on.
- 
---------------------
-MODAL, THIS IS THE WINDOW THAT APPEARS WHEN YOU CLICK ON A PROJECT.
-Currently the modal is popping up at the top of the page and not centered on the current view.  I need to fix this.
-The modal needs to pop up in the center of the current viewport.
---------------------*/
-
-
-/* Preliminary styling that will be used consistently throuhgtout the program */
-.teah {
-
+* {
+    box-sizing: border-box;
 }
 
-
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+body {
+    background: #000000;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-/* Modal Content */
-.modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 80%;
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
+img {
+    max-width: 100%;
+    height: auto;
 }
 
-/* Add Animation */
-@-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
-    to {top:0; opacity:1}
-}
-
-@keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
-}
-
-/* The Close Button */
-.close {
-    color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-
-
-body
-{
-	background: #000000;
-	color: rgb(255, 255, 255);
-	font-family: 'Raleway', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-}
-
-/* start all section */
+/* Override fullPage's forced heights so the page scrolls normally. */
 #home,
 #home .fp-slide,
 #home .fp-tableCell,
-
 #work,
 #work .fp-slide,
 #work .fp-tableCell,
-
 #about,
 #about .fp-slide,
 #about .fp-tableCell,
-
+#experience,
+#experience .fp-slide,
+#experience .fp-tableCell,
 #contact,
 #contact .fp-slide,
 #contact .fp-tableCell,
-
 #portfolio,
 #portfolio .fp-slide,
 #portfolio .fp-tableCell,
-
-#resume, 
+#resume,
 #resume .fp-slide,
 #resume .fp-tableCell,
-
 #github,
 #github .fp-slide,
 #github .fp-tableCell,
-
 footer,
 footer .fp-slide,
-footer .fp-tableCell
-{
+footer .fp-tableCell {
     height: auto !important;
 }
 
-/* end all section */
-
-.resume
-{
-        color: #606060;
-        background:#212121;
-        padding: 20px;
-        text-align: center;
-        display: block;
-
-
-
-        /* round the corners*/
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        border-radius: 5px;
-        display: block;
-        
-
+/* Headings */
+h1, h3, h4, h5 {
+    color: #ffffff;
+    font-weight: bold;
 }
-
-.github
-{
-        color: #606060;
-        background:#212121;
-        padding: 20px;
-        text-align: center;
-
-        /* round the corners*/
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        border-radius: 5px;
-
-        /* Align the image that is pulled in from my github 'Maximilian741'.*/
-        text-align: center;
-        margin: 0 auto;
-        display: block;
-        image-orientation: center;
-        text-orientation: center;
-        display: block;
-
-        
-        
-
-}
-.iframe
-{
-        color: #606060;
-        background:#212121;
-        padding: 20px;
-        text-align: center;
-
-        /* round the corners*/
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px;
-        border-radius: 5px;
-
-        /* Align the image that is pulled in from my github 'Maximilian741'.*/
-        text-align: center;
-        margin: 0 auto;
-        display: block;
-        image-orientation: center;
-        text-orientation: center;
-        display: block;
-
-        
-        
-
-}
-
-/* start all heading */
-h1,h3,h4,h5
-    {
-        color: #ffffff;
-        font-weight: bold;
-        
-    }
-    h2{
-        text-align: center;
-    }
-/* end all heading */
-
-/* start all section */
-#work, #about, #portfolio, #contact
-    {
-        padding-top: 100px;
-        padding-bottom: 120px;
-    }
-/* end all section */
-
-/* start simpletextrotator */
-.rotating {
-  display: inline-block;
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
-  -o-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
-  -moz-transform: rotateX(0) rotateY(0) rotateZ(0);
-  -ms-transform: rotateX(0) rotateY(0) rotateZ(0);
-  -o-transform: rotateX(0) rotateY(0) rotateZ(0);
-  transform: rotateX(0) rotateY(0) rotateZ(0);
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  -webkit-transform-origin-x: 50%;
-}
-
-.rotating.flip {
-  position: relative;
-}
-
-.rotating .front, .rotating .back {
-  left: 0;
-  top: 0;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.rotating .front {
-  position: absolute;
-  display: inline-block;
-  -webkit-transform: translate3d(0,0,1px);
-  -moz-transform: translate3d(0,0,1px);
-  -ms-transform: translate3d(0,0,1px);
-  -o-transform: translate3d(0,0,1px);
-  transform: translate3d(0,0,1px);
-}
-
-.rotating.flip .front {
-  z-index: 1;
-}
-
-.rotating .back {
-  display: block;
-  opacity: 0;
-}
-
-.rotating.spin {
-  -webkit-transform: rotate(360deg) scale(0);
-  -moz-transform: rotate(360deg) scale(0);
-  -ms-transform: rotate(360deg) scale(0);
-  -o-transform: rotate(360deg) scale(0);
-  transform: rotate(360deg) scale(0);
-}
-
-.rotating.flip .back {
-  z-index: 2;
-  display: block;
-  opacity: 1;
-  
-  -webkit-transform: rotateY(180deg) translate3d(0,0,0);
-  -moz-transform: rotateY(180deg) translate3d(0,0,0);
-  -ms-transform: rotateY(180deg) translate3d(0,0,0);
-  -o-transform: rotateY(180deg) translate3d(0,0,0);
-  transform: rotateY(180deg) translate3d(0,0,0);
-}
-
-.rotating.flip.up .back {
-  -webkit-transform: rotateX(180deg) translate3d(0,0,0);
-  -moz-transform: rotateX(180deg) translate3d(0,0,0);
-  -ms-transform: rotateX(180deg) translate3d(0,0,0);
-  -o-transform: rotateX(180deg) translate3d(0,0,0);
-  transform: rotateX(180deg) translate3d(0,0,0);
-}
-
-.rotating.flip.cube .front {
-  -webkit-transform: translate3d(0,0,100px) scale(0.9,0.9);
-  -moz-transform: translate3d(0,0,100px) scale(0.85,0.85);
-  -ms-transform: translate3d(0,0,100px) scale(0.85,0.85);
-  -o-transform: translate3d(0,0,100px) scale(0.85,0.85);
-  transform: translate3d(0,0,100px) scale(0.85,0.85);
-}
-
-.rotating.flip.cube .back {
-  -webkit-transform: rotateY(180deg) translate3d(0,0,100px) scale(0.9,0.9);
-  -moz-transform: rotateY(180deg) translate3d(0,0,100px) scale(0.85,0.85);
-  -ms-transform: rotateY(180deg) translate3d(0,0,100px) scale(0.85,0.85);
-  -o-transform: rotateY(180deg) translate3d(0,0,100px) scale(0.85,0.85);
-  transform: rotateY(180deg) translate3d(0,0,100px) scale(0.85,0.85);
-}
-
-.rotating.flip.cube.up .back {
-  -webkit-transform: rotateX(180deg) translate3d(0,0,100px) scale(0.9,0.9);
-  -moz-transform: rotateX(180deg) translate3d(0,0,100px) scale(0.85,0.85);
-  -ms-transform: rotateX(180deg) translate3d(0,0,100px) scale(0.85,0.85);
-  -o-transform: rotateX(180deg) translate3d(0,0,100px) scale(0.85,0.85);
-  transform: rotateX(180deg) translate3d(0,0,100px) scale(0.85,0.85);
-}
-/* end simpletextrotator */
-
-/* styling for the default button */
-.button
-{
-    background-color: #4CAF50; /* Green */
-    border: none;
-    padding: 15px 32px;
+h2 {
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    
-    /* I want the text inside the button to be dark grey */
-    color: #000000;
-
-
+    color: #ffffff;
 }
-.button2
-{
-    /* I want the button to fit the container it is inside but still have the same stytling as .button */
+
+/* Section padding */
+#work,
+#about,
+#experience,
+#portfolio,
+#resume,
+#contact {
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+/* ============================================================
+   HOME
+   ============================================================ */
+#home {
+    background-image: url('../images/8351257.gif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 120px;
+    padding-bottom: 200px;
+    text-align: center;
+    position: relative;
+}
+#home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    pointer-events: none;
+}
+#home .container {
+    position: relative;
+    z-index: 1;
+}
+#home h1 {
+    border: 3px solid #000000;
+    color: #ffffff;
+    display: inline-block;
+    letter-spacing: 6px;
+    padding: 25px 35px;
+    margin: 30px 0;
+}
+#home h2 {
+    padding-bottom: 10px;
+}
+#home .btn {
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    width: 180px;
+    height: 60px;
+    margin-top: 40px;
+    padding-top: 18px;
+    transition: all 0.4s ease-in-out;
+}
+#home .btn:hover,
+#home .btn:focus {
+    background: #000000;
+    border-color: transparent;
+    color: #ffffff;
+    outline: none;
+}
+
+/* ============================================================
+   SKILLS
+   ============================================================ */
+#work {
+    background: #1a1a1a;
+}
+#work .media {
+    margin-top: 30px;
+}
+#work .media .fa {
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    color: #0d939a;
+    font-size: 24px;
+    margin-right: 24px;
+    width: 60px;
+    height: 60px;
+    line-height: 55px;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.4s ease-in;
+}
+#work .media .fa:hover {
+    background: #ffffff;
+    cursor: pointer;
+}
+#work .media .media-heading {
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+/* ============================================================
+   EXPERIENCE
+   ============================================================ */
+#experience {
+    background: #141414;
+}
+#experience h2 {
+    padding-bottom: 40px;
+}
+.experience-item {
+    background: #1f1f1f;
+    border-left: 4px solid #0d939a;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+    border-radius: 4px;
+}
+.experience-header {
+    margin-bottom: 8px;
+}
+.experience-header h3 {
+    margin: 0 0 4px 0;
+    font-size: 20px;
+}
+.experience-meta {
+    display: block;
+    color: #8fbcbe;
+    font-size: 14px;
+    font-style: italic;
+}
+.experience-item p {
+    margin-top: 8px;
+    color: #cccccc;
+}
+
+/* ============================================================
+   PORTFOLIO
+   ============================================================ */
+#portfolio {
+    background: #1a1a1a;
+    text-align: center;
+}
+#portfolio h2 {
+    padding-bottom: 30px;
+}
+.portfolio-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
+#portfolio .portfolio-thumb {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+    background: #000;
+}
+#portfolio .portfolio-thumb img {
     width: 100%;
-    background-color: #4CAF50; /* Green */
+    height: 240px;
+    object-fit: cover;
+    display: block;
+}
+#portfolio .portfolio-thumb .portfolio-overlay {
+    background: #013c3d;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 30px 20px;
+    transition: all 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#portfolio .portfolio-thumb:hover .portfolio-overlay,
+#portfolio .portfolio-thumb:focus-within .portfolio-overlay {
+    cursor: pointer;
+    opacity: 0.92;
+}
+#portfolio .portfolio-overlay h4 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+#portfolio .portfolio-overlay h5 {
+    color: #d6f1f2;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.portfolio-cta {
+    display: inline-block;
+    background: #ffffff;
+    color: #013c3d;
+    padding: 8px 16px;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* ============================================================
+   RESUME / GITHUB
+   ============================================================ */
+#resume {
+    background: #141414;
+}
+.resume {
+    color: #cfcfcf;
+    background: #212121;
+    padding: 30px;
+    text-align: center;
+    border-radius: 6px;
+}
+.github {
+    color: #cfcfcf;
+    background: #2a2a2a;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    text-align: center;
+}
+.github-chart {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+}
+.github-chart img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Buttons */
+.button {
+    background-color: #4CAF50;
     border: none;
-    padding: 15px 32px;
+    padding: 14px 28px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 4px 6px;
     cursor: pointer;
-
-
+    color: #000000;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+.button:hover,
+.button:focus {
+    background-color: #3d8b40;
+    color: #000000;
+    text-decoration: none;
+    outline: none;
 }
 
-/* start home */       
-#home
-	{
-        
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer {
+    border-top: 1px solid #090909;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background: #0a0a0a;
+}
+.footer-copy {
+    margin-top: 20px;
+    color: #606060;
+    font-size: 14px;
+}
 
-        /*
-        I want the image to be full screen, so I set the background-size to cover.
-        I also want the background image to be called "136.jpg" and I want it to be repeated.
-        The image is not displaying on github pages, but it is displaying on my local machine.  
-        I need to use the full path to the image, but I don't know how to do that.
+/* ============================================================
+   SOCIAL ICONS
+   ============================================================ */
+.social-icon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.social-icon p {
+    color: #ffffff;
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+.social-icon li {
+    display: inline-block;
+    list-style: none;
+}
+.social-icon li a {
+    border-radius: 50%;
+    color: #606060;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    text-align: center;
+    margin-right: 10px;
+    font-size: 24px;
+    width: 44px;
+    height: 44px;
+    line-height: 44px;
+    display: inline-block;
+}
+.social-icon li a:hover,
+.social-icon li a:focus {
+    color: #077a7a;
+    outline: none;
+}
 
-        */
-        
-        /* I want the background image to be a dynamic image, or cycle thorugh several different images like a slideshow */
+/* ============================================================
+   TEXT ROTATOR (kept for the simple-text-rotator plugin)
+   ============================================================ */
+.rotating {
+    display: inline-block;
+    transform-style: preserve-3d;
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+    transition: 0.5s;
+}
+.rotating.flip {
+    position: relative;
+}
+.rotating .front,
+.rotating .back {
+    left: 0;
+    top: 0;
+    backface-visibility: hidden;
+}
+.rotating .front {
+    position: absolute;
+    display: inline-block;
+    transform: translate3d(0, 0, 1px);
+}
+.rotating.flip .front {
+    z-index: 1;
+}
+.rotating .back {
+    display: block;
+    opacity: 0;
+}
+.rotating.spin {
+    transform: rotate(360deg) scale(0);
+}
+.rotating.flip .back {
+    z-index: 2;
+    display: block;
+    opacity: 1;
+    transform: rotateY(180deg) translate3d(0, 0, 0);
+}
+.rotating.flip.up .back {
+    transform: rotateX(180deg) translate3d(0, 0, 0);
+}
 
-
-
-        /* I want the gif to be zoomed out to fit the screen*/
-        background-image: url('8351257.gif') ;
-        
-        background-position: center;
-        background-size: 140%;
-        background-repeat: no-repeat;
-        padding-top: 120px;
-        padding-bottom: 200px;
-        text-align: center;
-        
-	}
-#home h1
-    {
-        border: 3px solid #000000;
-        color: #ffffff;
-        display: inline-block;
-        letter-spacing: 6px;
-        padding: 25px 35px;
-        margin: 30px 0;
+/* ============================================================
+   RESPONSIVE TWEAKS
+   ============================================================ */
+@media (max-width: 768px) {
+    #home {
+        padding-top: 80px;
+        padding-bottom: 120px;
+        background-size: cover;
     }
-#home h2
-    {
-        padding-bottom: 10px;
+    #home h1 {
+        letter-spacing: 3px;
+        padding: 18px 22px;
+        font-size: 28px;
     }
-#home .btn
-    {
-        background: transparent;
-        border: 2px solid #ffffff;
-        color: #ffffff;
+    #home h2 {
         font-size: 16px;
-        font-weight: bold;
-        width: 180px;
-        height: 60px;
-        margin-top: 40px;
-        padding-top: 18px;
-        transition: all 0.4s ease-in-out;
     }
-#home .btn:hover
-    {
-        background: #000000;
-        border-color: transparent;
-    }
-/* end home */
-
-/* start work */
-#work
-    {
-        background: #1a1a1a;
-    }
-#work h2
-    {
-        text-align: center;
-    }
-
-#work .media
-    {
-      margin-top: 30px;
-    }
-	
-#work .media .fa
-    {
-        border: 2px solid #ffffff;
-        border-radius: 50%;
-        color: #0d939a;
-        font-size: 24px;
-        margin-right: 24px;
-        width: 60px;
-        height: 60px;
-        line-height: 55px;
-        text-align: center;
-        vertical-align: middle;
-        transition: all 0.4s ease-in;
-    }
-#work .media .fa:hover
-    {
-        background: #ffffff;
-        cursor: pointer;
-    }
-#work .media .media-heading
-    {
-        font-weight: 600;
-        font-size: 20px;
-        padding-bottom: 10px;
-    }
-/* end work */
-
-
-/* start portfolio */
-#portfolio
-    {
-        background: #1a1a1a;
-        text-align: center;
-    }
-#portfolio h2
-    {
-        padding-bottom: 30px;
-    }
-#portfolio .portfolio-thumb
-    {
-        overflow: hidden;
-        position: relative;
-        margin-bottom: 30px;
-    }
-#portfolio .portfolio-thumb .portfolio-overlay
-    {
-        background: #013c3d;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        opacity: 0;
-        width: 100%;
-        height: 100%;
-        position: absolute;
+    #work,
+    #experience,
+    #portfolio,
+    #resume {
         padding-top: 60px;
-        transition: all 0.4s ease-in-out;
+        padding-bottom: 60px;
     }
-#portfolio .portfolio-thumb:hover .portfolio-overlay
-    {
-        cursor: pointer;
-        opacity: 0.8;
-        transform: scale(0.9);
+    #portfolio .portfolio-thumb img {
+        height: 200px;
     }
-#portfolio .portfolio-thumb .portfolio-overlay .portfolio-title
-    {
-        color: #ffffff;
-        font-size: 24px;
-        font-weight: bold;
-        padding-bottom: 10px;
-    }
-/* end portfolio */
-
-/* start contact */
-
-#contact address
-    {
-      padding-bottom: 18px;
-    }
-	
-#contact .contact-title
-    {
-		font-size: 24px;
-		font-weight: bold;
-        padding-bottom: 20px;
-		color: #ffffff;
-    }
-#contact .fa
-    {
-        border: 2px solid #ffffff;
-        border-radius: 50%;
-        color: #077a7a;
-        width: 50px;
-        height: 50px;
-        line-height: 45px;
-        text-align: center;
-        margin-right: 20px;
-    }
-#contact .form-control
-    {
-        background: transparent;
-        border: 2px solid #999;
-        border-radius: 0;
-        box-shadow: none;
-        color: #ffffff;
-        margin-bottom: 20px;
-    }
-#contact input
-    {
-        height: 50px;
-    }
-#contact input[type="submit"]
-    {
-        background: #077a7a;
-        border: 2px solid transparent;
-        color: #ffffff;
-        font-weight: bold;
-        transition: all 0.4s ease-in-out;
-    }
-#contact input[type="submit"]:hover
-    {
-        background: #ffffff;
-        color: #077a7a;
-    }
-/* end contact */
-
-/* start footer */
-footer
-    {
-        border-top: 1px solid #090909;
-        text-align: center;
-        padding-top: 40px;
-        padding-bottom: 20px;
-    }
-footer hr
-    {
-        width: 100px;
-    }
-/* end footer */
-
-/* start social icon */
-.social-icon
-    {
-        position: relative;
-        padding: 0;
-        margin: 0;
-    }
-.social-icon li
-    {
-        display: inline-block;
-        list-style: none;
-    }
-.social-icon li a
-    {
-        border-radius: 50%;
-        color: #606060;
-        text-decoration: none;
-        transition: all 0.4s ease-in-out;
-        text-align: center;
-        margin-right: 10px;
-    }
-.social-icon li a:hover
-    {
-        color: #077a7a;
-    }
-/* end social icon */
+}
